@@ -48,8 +48,7 @@ body {
     box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.15);
     color: #777;
 
-    transform-origin: top;
-    transform: perspective(400px) rotateX(20deg);
+    
   }
 
   .dropdown ul {
@@ -74,3 +73,4 @@ body {
     color: #bc32a2;
     text-decoration: underline;
   }  
+/*# sourceMappingURL=style.a92b1672.css.map */
