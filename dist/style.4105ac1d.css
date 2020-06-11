@@ -1,0 +1,38 @@
+tml,
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#app {
+  margin: 3rem;
+}
+
+.searchbar input {
+  border: 2px solid #eee;
+  background: #eee;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #777;
+
+  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.searchbar input::placeholder {
+  color: #ccc;
+}
+
+.searchbar input:focus {
+  outline: none;
+  width: 20rem;
+  box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.15);
+
+  background: #fff;
+  border-color: #bc32a2;
+  color: #bc32a2;
+}
+/*# sourceMappingURL=style.4105ac1d.css.map */

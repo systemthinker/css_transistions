@@ -1,0 +1,73 @@
+tml,
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#app {
+  margin: 3rem;
+}
+
+.searchbar input {
+  border: 2px solid #eee;
+  background: #eee;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #777;
+
+  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.searchbar input::placeholder {
+  color: #ccc;
+}
+
+.searchbar input:focus {
+  outline: none;
+  width: 20rem;
+  box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.15);
+
+  background: #fff;
+  border-color: #bc32a2;
+  color: #bc32a2;
+}
+
+.dropdown {
+    position: absolute;
+    margin-top: 100px;
+    left: 2px;
+    top: 0.5rem;
+    width: 21rem;
+  
+    background: white;
+    box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.15);
+    color: #777;
+  }
+
+  .dropdown ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown li {
+    display: block;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  
+  .dropdown li:hover {
+    background: #eee;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .dropdown strong {
+    color: #bc32a2;
+    text-decoration: underline;
+  }  
+/*# sourceMappingURL=style.f7851a11.css.map */
