@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import cx from "classnames";
+import FullscreenMenu from "./components/FullscreenMenu";
 
 export default function App() {
+
+    const [open, setOpen] = useState(false);
+
   return (
     <div>
-      <div className="searchbar">
-        <input placeholder="Search" />
+        <FullscreenMenu />
+           <div
+        className={cx("searchbar", {
+          "is-open": open
+        })}
+      >
+
+          
+        <input
+          placeholder="Search"
+          onFocus={e => setOpen(true)}
+          onBlur={e => setOpen(false)}
+        />
         <div className="dropdown_positioner">
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <ul>
               <li>
                 <strong>re</strong>al life CSS transition
@@ -19,9 +35,10 @@ export default function App() {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
-      <p>Use the searchbar above</p>
+      {/* <p>Use the searchbar above</p> */}
+    </div>
     </div>
   );
 }
